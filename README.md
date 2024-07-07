@@ -16,8 +16,8 @@ UE5事件系统
    ```
 3. 发送事件
    ```
-   /// m_OptionTag和ActionTag均为
+   /// m_OptionTag和ActionTag均为FGameplayTag类型
    FXXEventForMenu Event( m_OptionTag, ActionTag );
-   /// 通知Menu事件接收者GFS，该Option被点击FGameplayTag类型
+   /// 通知Menu事件接收者GFS，该Option被点击
    FXXEventSystemForMenu::GetInstance( ).PublishEvent( Event );
    ```
